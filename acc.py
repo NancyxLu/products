@@ -17,3 +17,9 @@ while True:
 
 for i in product:
 	print('商品', i[0], '的價格為', i[1])
+
+#將建立的商品清單寫到檔案中存起來
+
+with open ('menu.csv', 'w') as file:
+	for i in product:
+		file.write(i[0] + ',' +  i[1] + '\n')
