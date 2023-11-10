@@ -20,6 +20,7 @@ for i in product:
 
 #將建立的商品清單寫到檔案中存起來
 
-with open ('menu.csv', 'w') as file:
+with open ('menu.csv', 'w', encoding = 'utf-8') as file:
+	file.write('商品名稱'+','+'價格'+'\n')
 	for i in product:
 		file.write(i[0] + ',' +  i[1] + '\n')
