@@ -1,4 +1,4 @@
-
+#建立商品與商品價格
 product = []
 
 print('註:按 "q" 結束商品建立模式')
@@ -10,4 +10,10 @@ while True:
 	item = [name, price]
 	product.append(item)
 
-print(product) 
+#print(product) 
+
+
+#分別列式剛剛建立的商品
+
+for i in product:
+	print('商品', i[0], '的價格為', i[1])
